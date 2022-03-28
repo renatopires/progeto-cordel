@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2? family= Sriracha & display=swap');
 
+/* Até agora ainda nao sai o porque que minha @import nao quem funcionar ,mais vou descobrir */
+
 :root { 
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursiva;
@@ -55,6 +57,10 @@ section{
     padding-left:30px;
     font-size: 3vw;
 }
+section >p { 
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: rgb(245, 245, 245);
     color: black;
@@ -62,13 +68,25 @@ section.normal {
 }
 
 section.imagem{ 
-    background-color: rgba(51, 51, 51, 0.589);
+    background-color: rgba(51, 51, 51, );
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+    /* Quando você usa background-size nas mesma section e todas elas usam a msm back-size pode fazer a config somente a primaria que as outras iram funcionar */
 }
 section.imagem > p { 
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.510);
+    text-shadow: 1px 1px 0px black;
+}
+section#img01{ 
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+section#img02 { 
+    background-image: url('../imagens/background002.jpg');
 }
 
 footer{ 
