@@ -8,8 +8,8 @@
 
 :root { 
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: 'Passion One', cursiva;
-   --fonte3: 'Sriracha', cursiva;
+    --fonte2: Verdana, Geneva, Tahoma, sans-serif;
+   --fonte3: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 *{ 
@@ -25,8 +25,8 @@ html , body {
  font-family: var(--fonte1);
 }
 header{ 
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
@@ -42,7 +42,7 @@ header > p {
 }
 
 header a, footer a { 
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: bolder;
 }
@@ -58,28 +58,36 @@ section{
     font-size: 3vw;
 }
 section >p { 
-    padding-bottom: 2em;
+    padding-bottom: 1em;
 }
 
 section.normal {
-    background-color: rgb(245, 245, 245);
-    color: black;
-    
+    background-color: rgba(0, 0, 0, 0.897);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
 }
 
 section.imagem{ 
-    background-color: rgba(51, 51, 51, );
+    background-color: rgba(51, 51, 51, 0.829);
     color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    padding-left: 1px; 
+    padding-bottom: 70px;
+    padding-top: 70px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.589);
     background-size: cover;
     background-attachment: fixed;
+    
     /* Quando você usa background-size nas mesma section e todas elas usam a msm back-size pode fazer a config somente a primaria que as outras iram funcionar */
 }
 section.imagem > p { 
     display: inline-block;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.510);
-    text-shadow: 1px 1px 0px black;
+    padding: 20px;
+    padding-left: 20px;
+    background-color: rgba(0, 0, 0, 0.185);
+    text-shadow: 2px 2px 0px black;
+
 }
 section#img01{ 
     background-image: url('../imagens/background001.jpg');
@@ -90,9 +98,12 @@ section#img02 {
 }
 
 footer{ 
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px;
+}
+footer> a { 
+    color: black;
 }
 
